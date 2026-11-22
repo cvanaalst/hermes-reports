@@ -1,5 +1,10 @@
 [
  {
+  "name": "AliExpress deals (morning)",
+  "href": "deals/index.html",
+  "when": "22 Nov 15:15"
+ },
+ {
   "name": "AliExpress deals",
   "href": "deals/index.html",
   "when": "22 Nov 14:57"
