@@ -129,3 +129,24 @@ footer { margin-top: 32px; color: var(--muted); font-size: 0.8rem; }
   padding: 8px 10px; font-size: 0.85rem;
 }
 .chip b { display: block; font-size: 0.95rem; }
+
+/* price-watch: chart, week pills, sparklines, archive table */
+.chart {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 10px 8px 6px; margin: 14px 0 4px;
+}
+.lgwrap { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 0.75rem; color: var(--muted); padding: 0 4px 4px; }
+.lg i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; }
+.weeks { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 0; }
+.weeks .pill { margin: 0; padding: 3px 9px; font-size: 0.75rem; }
+.pill.cur { color: var(--fg); border-color: var(--fg); font-weight: 600; }
+.rspark { float: right; }
+.rspark svg { display: block; }
+.tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.grid-table { border-collapse: collapse; font-size: 0.85rem; font-variant-numeric: tabular-nums; width: 100%; }
+.grid-table th, .grid-table td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.grid-table th:first-child, .grid-table td:first-child { text-align: left; }
+.grid-table td.nw { white-space: normal; min-width: 150px; }
+.grid-table th { color: var(--muted); font-weight: 600; font-size: 0.78rem; }
+.grid-table .cur { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.note { color: var(--muted); font-size: 0.85rem; padding: 12px 4px; }
