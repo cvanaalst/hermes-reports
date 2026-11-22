@@ -1,5 +1,10 @@
 [
  {
+  "name": "AliExpress deals (evening)",
+  "href": "deals/index.html",
+  "when": "22 Nov 18:00"
+ },
+ {
   "name": "Kickstarter finds (4)",
   "href": "kickstarter/index.html",
   "when": "22 Nov 17:58"
@@ -8,10 +13,5 @@
   "name": "TV price watch (2026-W47)",
   "href": "tv/index.html",
   "when": "22 Nov 15:42"
- },
- {
-  "name": "AliExpress deals (morning)",
-  "href": "deals/index.html",
-  "when": "22 Nov 15:19"
  }
 ]
