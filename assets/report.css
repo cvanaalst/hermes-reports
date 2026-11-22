@@ -97,3 +97,35 @@ a { color: inherit; text-decoration: none; }
 .row .when { color: var(--muted); font-size: 0.85rem; }
 .empty { color: var(--muted); padding: 24px 0; }
 footer { margin-top: 32px; color: var(--muted); font-size: 0.8rem; }
+
+/* report rows with a value column (price watch, status lists) */
+.rows { display: grid; gap: 10px; }
+.rrow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.rrow:active { transform: scale(0.99); }
+.rname { font-weight: 650; }
+.rname .rank { color: var(--muted); font-weight: 500; margin-right: 6px; }
+.rprice { font-weight: 650; text-align: right; white-space: nowrap; }
+.rmeta { color: var(--muted); font-size: 0.85rem; grid-column: 1 / -1; }
+.rwhy { color: var(--muted); font-size: 0.85rem; grid-column: 1 / -1; }
+.delta { font-size: 0.85rem; font-weight: 600; }
+.delta.down { color: var(--ok); }
+.delta.up { color: var(--accent); }
+.pill {
+  display: inline-block; font-size: 0.72rem; padding: 1px 7px;
+  border-radius: 999px; border: 1px solid var(--line); color: var(--muted);
+}
+.pill.dropped { color: var(--accent); border-color: var(--accent); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.chip {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 8px 10px; font-size: 0.85rem;
+}
+.chip b { display: block; font-size: 0.95rem; }
