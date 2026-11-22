@@ -1,0 +1,99 @@
+/* Shared stylesheet for every Hermes report page.
+   One file so all reports look identical on the phone. */
+:root {
+  --bg: #ffffff;
+  --fg: #14161a;
+  --muted: #6b7280;
+  --card: #f6f7f9;
+  --line: #e5e7eb;
+  --accent: #d7321f;
+  --ok: #067647;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --fg: #e8eaed;
+    --muted: #9aa0a6;
+    --card: #191c22;
+    --line: #2a2e36;
+    --accent: #ff5a45;
+    --ok: #4ade80;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 18px 16px 48px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+header { margin-bottom: 18px; }
+h1 { font-size: 1.4rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+.sub { color: var(--muted); font-size: 0.9rem; }
+a { color: inherit; text-decoration: none; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 620px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 900px) { .grid { grid-template-columns: repeat(5, 1fr); } }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card:active { transform: scale(0.985); }
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: #fff;
+}
+.card .meta {
+  padding: 8px 10px 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.price { font-weight: 650; font-size: 1.02rem; }
+.disc {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.band {
+  margin: 26px 0 10px;
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--fg);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+}
+.band span { color: var(--muted); font-weight: 400; }
+
+/* index page */
+.list { display: grid; gap: 10px; }
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.row .name { font-weight: 600; }
+.row .when { color: var(--muted); font-size: 0.85rem; }
+.empty { color: var(--muted); padding: 24px 0; }
+footer { margin-top: 32px; color: var(--muted); font-size: 0.8rem; }
