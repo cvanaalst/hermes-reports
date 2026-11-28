@@ -1,13 +1,13 @@
 [
  {
-  "name": "AliExpress deals (morning)",
-  "href": "deals/index.html",
+  "name": "Kickstarter finds (25)",
+  "href": "kickstarter/index.html",
   "when": "28 Nov 08:00"
  },
  {
-  "name": "Kickstarter finds (20)",
-  "href": "kickstarter/index.html",
-  "when": "27 Nov 08:00"
+  "name": "AliExpress deals (morning)",
+  "href": "deals/index.html",
+  "when": "28 Nov 08:00"
  },
  {
   "name": "TV price watch (2026-W47)",
